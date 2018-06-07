@@ -1,0 +1,13 @@
+/*style_2.css*/
+.style2{
+    text-align: center;
+    color:white;
+    padding: 2%;
+    width:120px;
+    height:700px;
+    border:13px solid rgba(0, 155, 255,10);
+    background-color:rgba(0, 155, 255,10);
+    float: left ;
+    margin-right:2%;
+    margin-top: 0;
+}
