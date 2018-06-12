@@ -16,7 +16,7 @@ header{
     height:760px;
     color:#dcdcdc;
     border-bottom: 1px solid #dcdcdc;
-    background-image: url(../images/img01.png);
+    background-image: url(img01.png);
     background-position: top;
     opacity:0.7;
     
@@ -171,7 +171,7 @@ header{
     height:800px;
     border-bottom: 1px solid #dcdcdc;
     background-repeat: no-repeat;
-    background-image: url(../images/img02.png);
+    background-image: url(img02.png);
     opacity:0.7;
 }
 .article03{
@@ -314,7 +314,7 @@ header{
 .div03{
     width:900px;
     height:300px;
-    background-image: url(../images/img03.png);
+    background-image: url(img03.png);
     background-size:500px 400px;
     border:0px solid black;
     background-repeat: no-repeat;
@@ -325,7 +325,7 @@ header{
 .div04{
     width:900px;
     height:300px;
-    background-image: url(../images/img04.png);
+    background-image: url(img04.png);
     background-size:500px 400px;
     background-position: right;
     background-repeat: no-repeat;
@@ -379,29 +379,29 @@ header{
     
 }
 .div05{
-    background-image: url(../images/img05.png);
+    background-image: url(img05.png);
     top:7px;
     left:315px;
 }
 .div06{
-    background-image: url(../images/img06.png);
+    background-image: url(img06.png);
     bottom:240px;
     left:685px;
 }
 .div07{
-    background-image: url(../images/img07.png);
+    background-image: url(img07.png);
     bottom:218px;
     left:315px;
 }
 .div08{
-    background-image: url(../images/img08.png);
+    background-image: url(img08.png);
     bottom:465px;
     left:685px;
 }
 /*part 06-3*/
 .div05:hover,.div06:hover, .div07:hover, .div08:hover {
    
-    background-image: url(../images/text.png);
+    background-image: url(text.png);
     opacity: 0.3;
   }
   /*part 07-1*/
