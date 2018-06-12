@@ -83,7 +83,7 @@ header{
     background-color:rgba(243,243,243, 0);
 }
 .textbox03{
-    border:1px solid black;
+    border:1px solid #dcdcdc;
     background-color:white;
     border-radius:2px;
     width:100px;
@@ -497,7 +497,7 @@ header{
 /*part 08*/
 footer{
     height:350px;
-    background-color:rgba(0,0,0,0.99);
+    background-color:rgb(0,0,0);
     color:white;
     
 }
