@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>VLP虚拟实验室: Live</title>
+  <script src="scripts/modernizr-1.6.min.js"></script>
+  <link rel="stylesheet" media="screen" href="styles/basic.css" />
+  <link rel="icon" href="img/icon.png">
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="VLP虚拟实验室" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="workflow.html">Workflow</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <article>
+<!--
+    <h1>Tour dates</h1>
+    <table summary="when and where you can see the band">
+      <thead>
+      <tr>
+        <th>Date</th>
+        <th>City</th>
+        <th>Venue</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>June 9th</td>
+        <td>Portland, <abbr title="Oregon">OR</abbr></td>
+        <td>Crystal Ballroom</td>
+      </tr>
+      <tr>
+        <td>June 10th</td>
+        <td>Seattle, <abbr title="Washington">WA</abbr></td>
+        <td>Crocodile Cafe</td>
+      </tr>
+      <tr>
+        <td>June 12th</td>
+        <td>Sacramento, <abbr title="California">CA</abbr></td>
+        <td>Torch Club</td>
+      </tr>
+      <tr>
+        <td>June 17th</td>
+        <td>Austin, <abbr title="Texas">TX</abbr></td>
+        <td>Speakeasy</td>
+      </tr>
+      </tbody>
+    </table>
+-->
+
+    <section id="plan">
+      <h2>数字模型</h2>
+        <p>
+            基于3Dmax建模需注意以下三点：
+            第一，要有相对准确的模型数据，保证产品模型的尺寸比例协调和模型外观在视觉上的真实性。
+            第二，对于复杂对象要考虑三维模型的层次结构，分别建模，最后把所有的模型组合。
+            第三，使用尽量少的面数，删除冗余的几何元素，合并同类模型，降低整个模型的复杂度以优化模型、提高反应速度。
+            建好模型之后，根据虚拟实验室动作制作模型动画。
+            最后，利用VRP-for-Max插件导出场景。
+            导出场景之前要检查重名模型并进行修改，然后选择导出类型（静态模型、刚体动画、柔体动画、相机），
+            直接导出VRP格式的文件。
+        </p>
+      <h2>交互文档</h2>
+        <p>
+            VRP的设置对象主要包括动作、事件和场景三类要素。
+            动作包括物体移动、旋转、平动、缩放、视角切换，现实（隐藏）物体、交互控制、粒子特效等；
+            事件包括场景开始事件、鼠标和键盘时间、计时器和用于特定情况下由其他事件激发自定义事件（例如单机按钮启动机器）等；
+            场景包括文件中后期加入的界面、材质、声音等交互现象。
+            VRP交互设计就是在脚本编辑器中建立事件、动作和场景的相互关系，
+            用户触发某个事件或某个事件自动发生时，相应的场景做出相应的动作。
+        </p>
+      <h2>网络发布</h2>
+        <p>
+            在VRP中完成交互设置后，将VRP对象导出为支持网络发布的vrpie格式。
+            学生可通过网络或本地机用IE或Netscape浏览器使用虚拟实验室，随时随地地做实验、分解实验步骤，
+            也可通过旋转或移动对象查看其细节结构及属性、组装和拆卸对象等。
+            虚拟实验室技术既能减少实验室建设的投入成本，又可应用在远程教学网站上，以更好地实现金属焊接实践教学。
+        </p>    
+      <h2>预期成果</h2>
+        <p>实现电子工艺设计的虚拟实验课程，建立一个完整的虚拟现实系统，
+          使学生能够将电子工艺设计课程实现线上的仿真模拟。</p>
+        <p>系统采样网络结构，分为客户端和服务器端软件，服务器上存放仿真实验素材，
+          便于教师管理与日后的内容添加，系统升级，维护等。</p>
+        <p>方便简洁快速实现线上线下对接，服务广大师生</p>
+    </section>
+
+  </article>
+
+  
+
+
+
+<script src="scripts/global.js"></script>
+</body>
+</html>
