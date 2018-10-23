@@ -1,0 +1,112 @@
+.cover{
+    position: fixed;
+    left:0px;
+    top:0px;
+    z-index: 0;
+    opacity: 0.2;
+    height: 100%;
+    width: 100%;
+    background: #333;
+}
+/*********** index ************/
+#index_main, #bg {
+    height: 100%;
+    width: 100%;
+    background: url(../img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    -o-background-size:cover;
+}
+.index_text {
+    margin: 150px 0 150px 0;
+}
+.index_reg {
+    background-color: #fff;
+    padding: 10px 0 20px 0;
+    margin: 150px 13px 150px 13px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+.index_form {
+    margin: 0;
+    padding:0;
+}
+.index_form_reg {
+    padding: 0 10px 0 10px;
+}
+.index_reg_roles {
+    padding: 0 0 0 20px;
+}
+/****** Manager ******/
+#bg2 {
+    position: fixed;
+    z-index: 0;
+    margin: 1%;
+    height: 96.5%;
+    width: 97.9%;
+    border-radius: 5px;
+    background: #fff; 
+}
+/****** Manager-header ******/
+header {
+    background: url(../img/bg3.JPG) repeat-x;
+    border-radius: 5px 5px 0 0;
+}
+.manager_title {
+    font-size: 13px;
+    padding-right: 10px;
+    margin: 5px 0 5px 0;
+}
+.manager_user {
+    font-size: 12px;
+    margin-top: 5px;
+}
+/****** Manager-nav ******/
+#menus {
+    margin: 20px 0 10px 20px;
+    width: 160px;
+}
+.ui-accordion .ui-accordion-content {
+    padding: 0;
+}
+
+/****** 页脚 ******/
+footer {
+    background-color: #333;
+    color: #eee;
+    border-top: 1px solid #666;
+    padding: 20px;
+    text-align: center;
+}
+/* 小屏幕（平板，大于等于768px）*/
+@media (min-width: 768px) {
+    .index_reg { margin-left: 50px; }
+    .manager_title {
+        text-align: right;
+        font-size: 18px;
+        padding-right: 30px;
+    }
+}
+/* 中等屏幕（桌面显示器，大于等于992px）*/
+@media (min-width: 992px) {
+    .index_reg { margin-left: 50px; }
+    .manager_title {
+        text-align: right;
+        font-size: 20px;
+        padding-right: 75px;
+    }
+}
+/* 大屏幕（大桌面显示器，大于等于1200px）*/
+@media (min-width: 1200px) {
+    .index_reg { margin-left: 50px; }
+    .manager_title {
+        text-align: right;
+        font-size: 22px;
+        padding-right: 110px;
+    }
+    .manager_user {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+}

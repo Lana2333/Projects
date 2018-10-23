@@ -1,0 +1,167 @@
+/********* index.html **********/
+<div id="header_reg">
+        <form action="index.html" id="reg">
+            <legend class="text-center">用户登录</legend>
+            <ol class="reg_error"></ol>
+            <p class="form-inline">
+                <label for="user">账号：</label>
+                <input type="text" name="user" id="user" class="text form-control" placeholder="请输入账号..."/>
+            </p>
+            <p class="form-inline">
+                <label for="pass">密码：</label>
+                <input type="password" name="pass" id="pass" class="text form-control" placeholder="请输入不少于6位密码..."/>
+            </p>
+            <p class="reg_roles">
+                <input type="radio" name="reg_role" value="manager" id="manager"><label for="manager">管理员</label></input>
+                <input type="radio" name="reg_role" value="teacher" id="teacher"><label for="teacher">教师</label></input>
+                <input type="radio" name="reg_role" value="student" id="student"><label for="student">学生</label></input>
+            </p>
+            <p>
+                <input type="submit" value="登录" class="btn btn-info">
+            </p>
+        </form>
+ </div>
+
+</div><div id="loading">数据交互中...</div>
+
+<div class="cover"></div>
+/***************** managerPage ****************/
+<div class="managerCover"></div>
+    <div id="sys_header">
+        <div class="header_main">
+            <h4 class="text-center">基于JAVA的实验教学在线协同网站</h4>
+            <div class="header_member">
+                <a href="#" id="user_a">用户</a> | <a href="#" id="logout_a">退出</a>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+    <div class="main_right">
+		<div id="menus">
+			<h3>实验管理</h3>
+			<ol class="nav nav-list">
+                <li class="nav-header">实验室管理</li>
+                <li><a href="#">查看教室</a></li>
+                <li><a href="#">管理教室</a></li>
+                <li class="nav-header">实验项目管理</li>
+                <li><a href="#">查看项目</a></li>
+                <li><a href="#">管理项目</a></li>
+            </ol>
+			<h3>实验安排</h3>
+			<ol class="nav nav-list">
+                <li class="nav-header">课程管理</li>
+                <li><a href="#">查看课程</a></li>
+                <li><a href="#">管理课程</a></li>
+                <li class="nav-header">时间管理</li>
+                <li><a href="#">查看时间</a></li>
+                <li><a href="#">管理时间</a></li>
+            </ol>
+            <h3>教师/学生管理</h3>
+			<ol class="nav nav-list">
+                <li class="nav-header">教师管理</li>
+                <li><a href="#">查看教师</a></li>
+                <li><a href="#">管理教师</a></li>
+                <li class="nav-header">学生管理</li>
+                <li><a href="#">查看学生</a></li>
+                <li><a href="#">管理学生</a></li>
+            </ol>
+            
+		</div>
+    </div>
+
+/***************** style.csss *****************/
+
+.cover{
+    position: fixed;
+    left:0px;
+    top:0px;
+    z-index: -1;
+    opacity: 0.2;
+    height: 100%;
+    width: 100%;
+    background: #333;
+}
+
+
+
+#reg{
+    width: 300px;
+    height: 330px;
+    background: white;
+    border: 1px solid #666;
+    border-radius: 4px;
+    float: right;
+    margin: 110px 95px 0 0;
+}
+#reg .form-inline,.reg_roles{
+    font-size: 16px;
+    padding:10px;
+    font-family: 幼圆;
+    color: #555;
+    padding-left:30px;
+}
+#reg .reg_roles{
+    padding-left:85px;
+}
+#reg .btn{
+    width: 234px;
+    height: 34px;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding-left: 30px;
+    font-family: 幼圆;
+    font-size: 16px;
+    font-weight: 0.8em;
+    letter-spacing: 20px;
+}
+/*****manager*****/
+/*#managerPage{
+    background:url(../img/bg.jpg) repeat;
+}*/
+.managerCover{
+    position: fixed;
+    z-index: -1;
+    margin: 1%;
+    height: 96.5%;
+    width: 97.9%;
+    border-radius: 5px;
+    background: #fff; 
+}
+#sys_header{
+    position: fixed;
+    z-index: -1;
+    margin: 1%;
+    height: 50px;
+    width: 97.9%;
+    border-radius: 5px;
+    background: url(../img/bg3.JPG) repeat-x;
+}
+#sys_header h4 {
+    color: #fff;
+    margin-left:38%;
+    display: inline-block;
+}
+#sys_header .header_member {
+    padding:0 10px;
+	margin:0 20px 0 0;
+	line-height: 40px;
+	color:rgb(27, 27, 27);
+	font-size:16px;
+	float: right;
+}
+#sys_header .header_member a{
+	text-decoration: none;
+	color:#555;
+}
+#main .main_right{
+    width: 200px;
+    margin:5% 0 0 2%;
+	float: left;
+}
+#menus ol {
+    color:#666;
+    padding:0.5em;
+}
+#menus .nav-header {
+    border-bottom: 1px solid #666;
+}
