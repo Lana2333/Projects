@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>知问前端</title>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/jquery.form.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="./uEditor/uEditor.js"></script>
+	<script type="text/javascript" src="js/main.js" ></script>
+
+	<link rel="icon" href="img/icon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="css/jquery.ui.css" type="text/css" />
+	<link rel="stylesheet" href="./uEditor/uEditor.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css"/> 
+	
+</head>
+<body>
+    <div id="header">
+		<div class="header_main">
+			<h2>知问</h2>
+			<div class="header_search">
+				<input type="text" name="search" class="search" />
+			</div>
+			<div class="header_button">
+				<button id="search_button">搜索</button>
+				<button id="question_button">提问</button>
+			</div>
+			<div class="header_member">
+				<a href="#" id="reg_a">注册</a>
+				<a href="#" id="member">用户</a>
+				 | 
+				<a href="#" id="login_a">登录</a>
+				<a href="#" id="logout">退出</a>
+			</div>
+		</div>
+	</div>
+<!--*********************用户注册************************-->
+	<form action="123.html" id="reg" title="用户注册">
+		<ol class="reg_error"></ol>
+		<p>
+			<label for="user">账号：</label>
+			<input type="text" name="user" id="user" class="text" />
+			<span class="star">*</span>
+		</p>
+		<p>
+			<label for="pass">密码：</label>
+			<input type="password" name="pass" id="pass" class="text"/>
+			<span class="star">*</span>
+		</p>
+		<p>
+			<label for="email">邮箱：</label>
+			<input type="text" name="email" id="email" class="text" />
+			<span class="star">*</span>
+		</p>
+		<p>
+			<label>性别：</label>
+			<input type="radio" name="sex" value="male" id="male" checked="checked"><label for="male">男</label></input><input type="radio" name="sex" value="female" id="female"><label for="female">女</label></input>
+		</p>
+		<p>
+			<label for="birthday">生日：</label>
+			<input type="text" name="birthday" id="birthday" class="text" readonly="readyonly"/>
+		</p>
+	</form>
+
+<!--*********************用户登录************************-->
+	<form action="123.html" id="login" title="用户登录">
+		<ol class="login_error"></ol>
+		<p>
+			<label for="login_user">账号：</label>
+			<input type="text" name="login_user" id="login_user" class="text" />
+			<span class="star">*</span>
+		</p>
+		<p>
+			<label for="login_pass">密码：</label>
+			<input type="password" name="login_pass" id="login_pass" class="text"/>
+			<span class="star">*</span>
+		</p>
+		<p>
+			<input type="checkbox" checked="checked" name="expires" id="expires" />
+			<lable for="expires">登录后有效期一周</lable> 
+		</p>
+	</form>
+
+<!--*********************选项卡///菜单************************-->
+	<div id="main">
+		<div class="main_left">
+			<div id="tabs">
+				<ul>
+					<li><a href="tab1.html">tab1</a></li>
+					<li><a href="tab1.html">tab2</a></li>
+					<li><a href="tab1.html">tab3</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				
+			</div>
+		</div>
+
+		<div class="main_right">
+			<div id="menus">
+				<h3>菜单1</h3>
+				<div><p>内容1</p><p>内容1</p></div>
+				<h3>菜单2</h3>
+				<div>内容2</div>
+				<h3>菜单3</h3>
+				<div>内容3</div>
+			</div>
+		</div>
+	</div>
+<!--*********************提问************************-->
+	<form action="123.html" id="question" title="提问">
+		<p>
+			<label for="title">问题名称：</label>
+			<input type="text" name="title" id="title" class="text" style="width:360px"/>
+		</p>
+		<p>
+			<textarea class="uEditorCustom" name="content">请输入问题描述：</textarea>
+		</p>
+	</form>
+
+
+<!--*********************数据交互************************-->
+	<div id="loading">数据提交中...</div>
+	<div id="error">请登录后操作...</div>
+
+</body>
+</html>
