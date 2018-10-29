@@ -1,0 +1,8 @@
+[#-global]
+vrp-version=17.0101
+vrpie-version=X
+bg-color=ff3a6ea5
+data-file=seven.zip
+-=----------------
+[#PlugUsed]
+size=0
